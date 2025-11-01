@@ -1,0 +1,202 @@
+*{
+    margin: 0;
+    box-sizing: border-box;   
+}
+
+body{
+  background-color: #F7F7F7;
+  min-height: 100vh;
+}
+/*SEGUIR EDITANDO WL WIDTH DE SECTION PORQUE NO AGARRA BIEN */
+
+.section {
+  height: 1000px;
+  margin: 0 auto;
+  /*border: 2px solid rgb(177, 177, 177);*/
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (min-width: 700px) {
+  .section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+@media (min-width: 900px) {
+  .section {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+}
+
+.section_fonts {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+p {
+  font-family: "Lato", sans-serif;
+  font-weight: 100;
+  font-size: 20px;
+  font-style: normal;
+  text-align: center;
+  line-height: 1.6;
+  color: #333333;
+  margin-top: 50px;
+}
+h1 {
+  font-family: "Press Start 2P", system-ui;
+  font-weight: 600;
+  font-size: 38px;
+  font-style: normal;
+  text-align: center;
+  text-shadow: 2px 2px 4px #555555;
+  color: #FFDE00;
+  
+}
+@media (min-width: 1000px) {
+  h1 {
+   font-size: 40px;
+  }
+  p{
+    font-size: 25px;
+  }
+}
+.content_input_and_button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.group {
+  line-height: 28px;
+  align-items: center;
+  position: relative;
+  margin-top: 100px;  
+}
+
+.input {
+  font-family: "Roboto", sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  width: 300px;
+  height: 45px;
+  padding: 10px;
+  margin: 0 10px 0;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+  /*border: 0;*/
+  border: 1px solid #333333;
+  border-radius: 12px;
+  background-color: #FFFFFF;
+  outline: none;
+  color: #333333;
+  transition: all 0.25s cubic-bezier(0.19, 1, 0.22, 1);
+  cursor: text;
+  z-index: 0;
+}
+@media (min-width: 1000px) {
+  .input {
+    width: 500px;
+    height: 45px;
+  }
+}
+
+.input::placeholder {
+  color: #333333;
+}
+
+.input:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0 0 10px rgba(255, 204, 0, 0.4);
+}
+
+.input:active {
+  transform: scale(0.95);
+}
+
+.input:focus {
+  box-shadow: 0 0 0 2.5px #333333;
+}
+
+.search-icon {
+  position: absolute;
+  left: 1.3rem;
+  fill: #333333;
+  width: 1.3rem;
+  height: 1.3rem;
+  pointer-events: none;
+  z-index: 1;
+}
+
+.button {
+  width: 75px;
+  height: 45px;
+  margin-right: 5px;
+  color: #ffffff;
+  font-size: 15px;
+  font-weight: bold;
+  font-family: "Roboto", sans-serif;
+  padding: 10px;
+  border-radius: 0.5em;
+  background: #CC0000;
+  cursor: pointer;
+  border: 1px solid #333333;
+  transition: all 0.3s;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
+}
+@media (min-width: 1000px) {
+  .button {
+    width: 150px;
+    height: 45px;
+  }
+}
+
+.button:hover {
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2), 0 0 10px #CC0000;
+}
+
+.button:active {
+  transform: scale(0.95);
+}
+
+#resultado {
+  width: 400px;
+  margin: 5px auto;
+  margin-top: 50px;
+ 
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  background: #FAFAFA;
+  box-shadow: 12px 17px 51px rgba(0, 0, 0, 0.22);
+  backdrop-filter: blur(6px);
+  border-radius: 17px;
+  cursor: pointer;
+  transition: all 0.5s;
+  user-select: none;
+  font-weight: bolder;
+  color: black;
+}
+@media (max-width: 400px) {
+  #resultado {
+    width: 350px;
+  }
+}
+@media (max-width: 360px) {
+  #resultado {
+    width: 350px;
+  }
+}
+
+
+
+#resultado:hover {
+  border: 1px solid #DDDDDD;
+  transform: scale(1.05);
+}
+#resultado:active {
+  transform: scale(0.95) rotateZ(1.7deg);
+}
