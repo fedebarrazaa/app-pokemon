@@ -26,6 +26,3 @@ El usuario puede:
 
 ## 🌐 Demo Online
 Ver App Desordenada en GitHub Pages: https://fedebarrazaa.github.io/app-desordenada/
-
-
-https://fedebarrazaa.github.io/app-pokemon/
