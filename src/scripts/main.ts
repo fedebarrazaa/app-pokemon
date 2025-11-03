@@ -71,7 +71,6 @@ function mostrarPokemon(data:any){
         }
         </style>
     `   
-    
     }
     render()
 }
@@ -82,7 +81,7 @@ function mostrarError(){
     const errorEl = document.querySelector('#resultado'); 
     errorEl!.innerHTML = '';
     errorEl!.innerHTML = `
-    <p class = "error_p">Ese Pokemon no existe ⚠️</p>
+    <p class = "error_p">Este Pokemon no existe</p>
     <style> 
         .error_p {
         font-family: "Press Start 2P", system-ui;
