@@ -2,15 +2,19 @@
   "name": "app-pokemon",
   "version": "1.0.0",
   "description": "",
+  "type": "commonjs",
   "scripts": {
-    "start": "parcel src/index.html",
-    "build": "parcel build"
+    "start": "pnpm exec parcel src/index.html",
+    "build": "pnpm exec parcel build src/index.html --public-url ./",
+    "predeploy": "pnpm run build",
+    "deploy": "gh-pages -d dist"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/fedebarrazaa/app-pokemon.git"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "packageManager": "pnpm@10.5.1",
-  "devDependencies": {
-    "parcel": "^2.16.0"
-  }
+  "homepage": "https://fedebarrazaa.github.io/app-pokemon/"
 }
