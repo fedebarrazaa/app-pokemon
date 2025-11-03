@@ -1,0 +1,24 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+}
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  position: relative;
+}
+
+body:before {
+  content: "";
+  z-index: -2;
+  background-color: #fff;
+  background-image: radial-gradient(100% 50% at 50% 0, #00a3ff21 0%, #00a3ff00 50% 100%);
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+/*# sourceMappingURL=app-pokemon.61d3354a.css.map */
